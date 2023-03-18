@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<ctype.h>
 /**
- * mian - printing numbers of base 16 in lowercase
+ * main - printing numbers of base 16 in lowercase
  * Return: 0
  */
 int main(void)
