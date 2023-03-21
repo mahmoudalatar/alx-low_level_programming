@@ -6,5 +6,5 @@
 int main(void)
 {
 	printf("_putcahr\n");
-	retrun(0);
+	return(0);
 }
