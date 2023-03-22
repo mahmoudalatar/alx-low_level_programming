@@ -1,16 +1,4 @@
-#include<stdio.h>
-
-void print_alphabet(void);
-
-/**
- * main - calling print_alphabet()
- * Return: 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+#include "main.h"
 
 /**
  * print_alphabet -  print alphabet
