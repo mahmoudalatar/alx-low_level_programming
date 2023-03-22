@@ -9,11 +9,11 @@
 void jack_bauer(void)
 {
 	int n1, n2, n3, n4;
+
 	n1 = n2 = n3 = n4 = 0;
 
-	/*printf("%d%d:%d%d\n", n4, n3, n2, n1);*/
-	while(n4 <= 2)
-	{	
+	while (n4 <= 2)
+	{
 		printf("%d%d:%d%d\n", n4, n3, n2, n1);
 		n1++;
 		if (n1 == 10)
@@ -23,7 +23,7 @@ void jack_bauer(void)
 		}
 		if (n2 == 6)
 		{
-			n2 =0;
+			n2 = 0;
 			n3++;
 		}
 		if (n3 == 10)
