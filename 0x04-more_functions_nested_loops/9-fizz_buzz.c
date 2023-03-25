@@ -21,9 +21,8 @@ int main(void)
 		else
 			printf("%d", i);
 
-		putchar(' ');
+		putchar(i == 100 ? '\n' : ' ');
 	}
-	putchar('\n');
 
 	return (0);
 }
