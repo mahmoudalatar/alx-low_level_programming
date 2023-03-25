@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * print_triangle - prints a traingle
+ * @size: the size of triangle
+ * Return: nothing
+ */
+
+void print_triangle(int size)
+{
+	int i, j;
+
+	for (i = 0; i < size; i++)
+	{
+		putchar(' ');
+		for (j = 0; j < size - i - 1; j++)
+		{
+			putchar(' ');
+		}
+		for (j = 0; j < i + 1; j++)
+		{
+			putchar('#');
+		}
+		putchar('\n');
+
+	}
+}
