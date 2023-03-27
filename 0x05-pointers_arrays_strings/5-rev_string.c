@@ -19,4 +19,5 @@ void rev_string(char *s)
 		s[i] = b;
 		s[strlen(s) - i - 1] = a;
 	}
+	putchar('\n');
 }
