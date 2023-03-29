@@ -1,27 +1,26 @@
 #include <string.h>
 /**
  * leet - encodes a tring inot 1337
- * @str: the string will be encodes
+ * @n: the string will be encodes
  * Return: array type char
  */
 
-char *leet(char *str)
+char *leet(char *n)
 {
-	int i = 0;
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	while (str[i])
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if ('a' == str[i] || 'A' == str[i])
-			str[i] = '4';
-		else if ('e' == str[i] || 'E' == str[i])
-			str[i] = '3';
-		else if ('o' == str[i] || 'O' == str[i])
-			str[i] = '0';
-		else if ('t' == str[i] || 'T' == str[i])
-			str[i] = '7';
-		else if ('l' == str[i] || 'L' == str[i])
-			str[i] = '1';
-		i++;
+		for (j = 0; j < 10; j++)
+		{
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
+		}
 	}
-	return (str);
+
+	return (n);
 }
