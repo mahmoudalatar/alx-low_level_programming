@@ -4,7 +4,7 @@
  * _strspn - gets the length of a prefix substring
  * @s: the main array
  * @accept: the supstring
- * Reutrn: int
+ * Return: number of the bytes of right comparison
  */
 
 unsigned int _strspn(char *s, char *accept)
