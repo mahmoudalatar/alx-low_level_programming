@@ -26,7 +26,7 @@ int reverse_c(int i, char *s)
 
 void _print_rev_recursion(char *s)
 {
-	int z = strlen(s);
+	int z = strlen(s) - 1;
 
 	reverse_c(z, s);
 	putchar('\n');
