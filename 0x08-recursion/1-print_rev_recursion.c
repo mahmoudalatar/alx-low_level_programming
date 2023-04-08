@@ -2,6 +2,23 @@
 #include <string.h>
 
 /**
+ * reverse_c - print string in reverse
+ * @s: the string will be print
+ * @i: index
+ * Return: int
+ */
+
+int reverse_c(int i, char *s)
+{
+	if (i == 0)
+		return (0);
+	printf("%c", s[i]);
+	i--;
+	reverse_c(i, s);
+	return (i);
+}
+
+/**
  * _print_rev_recursion - print string in reverse
  * @s: the string will be print
  * Return: nothing
@@ -9,12 +26,8 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i;
 	int z = strlen(s);
 
-	for (i = z; i > 0; i--)
-	{
-		printf("%c", s[i]);
-	}
+	reverse_c(z, s);
 	putchar('\n');
 }
