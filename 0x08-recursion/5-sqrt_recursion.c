@@ -1,10 +1,10 @@
+int calc_sqrt(int n, int i);
+
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: the number will be use to get square root
  * Return: int
  */
-
-int calc_sqrt(int n, int i);
 
 int _sqrt_recursion(int n)
 {
@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 /**
  * calc_sqrt - calc and returns the natural square root of a number
  * @n: the number will be use to get square root
- * @i: conter
+ * @i: iterator
  * Return: int
  */
 
