@@ -10,7 +10,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int s, i;
+	unsigned int s, i;
 	char *new_str;
 
 	if (s1 == NULL)
